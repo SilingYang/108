@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+      
+       
+      <style>
+          .contentstyle{
+              padding:10px 20px
+          }   
+          
+      </style>
+   </head>
+
+   <body>
+      
+    <div class="container" >
+        <h2 class="text-center">统一建模语言理论考试</h2>
+        <div class="form-group">
+            <div class="col-md-4 col-xs-4"><p >考试科目：统一建模语言</p></div>
+            <div class="col-md-4 col-xs-4"><p >时间：100分钟</p></div>
+            <div class="col-md-4 col-xs-4"><p id="showScore">得分：</p></div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 col-xs-5"><p>班级：<input type="text" placeholder="1班"></input></p></div>
+            <div class="col-md-4 col-xs-5"><p>学号：<input type="text" placeholder="001"></input></p></div>
+            <div class="col-md-4 col-xs-5"><p>姓名：<input type="text" placeholder="夏雨"></input></p></div>
+        </div>
+     
+        <h4>一、填空题（每空5分，共20分）</h4>
+        <form class="form-horizontal " role="form">
+            <div class="form-group">
+                <label  class="col-md-2 ">1.UML的中文全称是：</label>
+                <div class="col-md-3 control-label ">
+                    <input type="text" class="form-control"  placeholder="统一建模语言">
+                </div>
+            </div>
+            <div class="form-group">
+                <label  class="col-md-2 " >2.对象最突出的特征是:</label>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"  placeholder="封装性">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"  placeholder="继承性">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control"  placeholder="多态性">
+                </div>
+            </div>
+        </form>
+
+        <h4>二、选择题（每题10分，共20分）</h4>
+        <label for="name" class="contentstyle">1.UML与软件工程的关系是：</label>
+        <div class="radio" style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios1"  > (A)UML就是软件工程</label>
+        </div>
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios1"  >(B) UML参与到软件工程中软件开发过程的几个阶段</label>
+        </div>
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios1" >(C) UML与软件工程无关</label>
+        </div>  
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios1" >(D) UML是软件工程的一部分</label>
+        </div>
+
+        <label for="name" class="contentstyle">2. Java语言支持：</label>
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios2"  > (A) 单继承</label>
+        </div>
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios2"  >(B) 多继承</label>
+        </div>
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios2" >(C) 单继承和多继承都支持</label>
+        </div>  
+        <div class="radio " style='padding:2px 30px'>
+            <label><input type="radio" name="optionsRadios2" >(D) 单继承和多继承都不支持</label>
+        </div>
+
+
+        <h4>三、多择题（每题10分，共20分）</h4>
+        <label for="name" class="contentstyle">1. 用例的粒度分为以下哪三种：</label>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(A) 概述级</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(B) 需求级</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value="" class="multiple">(C) 用户目标级</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(D) 子功能级</label>
+        </div>
+
+        <label for="name" class="contentstyle">2. 类图由以下哪三部分组成：</label>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(A) 名称(Name)</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(B)属性(Attribute)</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value=""  class="multiple">(D)操作(Operation)</label>
+        </div>
+        <div class="checkbox" style='padding:2px 30px'>
+            <label><input type="checkbox" value="" class="multiple">(D) 方法(Function)</label>
+        </div>
+        <h4>四、判断题（每题10分，共20分）</h4>
+        <h5 class="contentstyle" style='padding:2px 30px'>1. 用例图只是用于和客户交流和沟通的,用于确定需求。
+        <label class="radio-inline" >
+            <input type="radio" name="optionsRadiosinline1" id="judge1" value="option1" >√
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline1" id="judge2"  value="option2" >×
+        </label>
+        </h5>
+        <h5 class="contentstyle" style='padding:2px 30px'>2. 在状态图中,终止状态在一个状态图中允许有任意多个。
+        <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline2" id="judge3" value="option1" >√
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="optionsRadiosinline2" id="judge4"  value="option2"> ×
+        </label>
+        </h5>
+
+        <h4>五、简答题（每题20分，共20分）</h4>   
+        <form role="form" class="contentstyle">
+            <div class="form-group" id="shortanswer">
+                <label for="name" >1.简述什么是模型以及模型的表现形式。</label>
+                <textarea class="form-control choicestyle" rows="3" col="8"> 模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。"</textarea>
+            </div>
+        </form>
+
+        <button type="button" style='padding:2px 30px' onclick="countScore()">计算分数</button>
+
+    </div>  
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="./countScore.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+   </body>
+</html>
